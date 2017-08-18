@@ -1,0 +1,112 @@
+<!-- about.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>EKG.ninja - About Us</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/css/stylesheet.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,400,600" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.ekg.ninja">ekg.ninja</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navwerdz">
+            <li><a href="http://www.ekg.ninja">Home</a></li>
+            <li class="active"><a href="#">About</a></li>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://ninja.us16.list-manage.com/subscribe/post?u=7733c0440cdb5bef8eb9a3335&id=6ba7689155"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row header about">
+            <div class="col-md-12">
+              <div class="header-txt">
+              About ekg.ninja
+              </div>
+          </div>
+        </div>
+
+
+        <div class="row chunk">
+              <div class="chunkie1">
+                <div class="col-md-12 chunktext c1"><h1>Our Mission</h1><br>Our mission is to bring you accessible and engaging online medical education.  We take you through every aspect of EKG interpretation in a systematic fashion so that when you encounter EKGs in the clinical setting you have a solid framework to work with.  At the end of the day, we want to make you a better provider, and improve patient care.</div>
+              </div>
+            </div>
+          <div class="chunkie1 about-txt">
+            <div class="col-md-6 chunkimage c3"><img src="/img/hospital.jpg" class="chunkimage star"></div>
+            <div class="col-md-6 chunktext c4"><h1>Our Story</h1><br>We are Emergency Medicine residents who felt there was a need for better core content education.  Fed up with the current state of medical education, we set out to create something we wish existed.  Our course embodies the educational needs of our generation.  We have made short easy to digest and high-yield videos with quiz questions that enable you to learn what you need to know the fast and fun way. </br>
+            <em></br>- ekg.ninja team</em></div>
+          </div>
+        </div>
+</div>
+
+    </body>
+
+    <footer class="footer-distributed">
+      <div class="footer-right">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+
+      <div class="footer-left">
+        <p class="footer-links">
+          <a href="http://www.ekg.ninja">Home</a>
+          ·
+          <a href="#">About</a>
+        </p>
+
+        <p>ekg.ninja &copy; 2017</p>
+      </div>
+
+    </footer>
+
+
+      <script>
+      function showImages(el) {
+          var windowHeight = jQuery( window ).height();
+          $(el).each(function(){
+              var thisPos = $(this).offset().top;
+
+              var topOfWindow = $(window).scrollTop();
+              if (topOfWindow + windowHeight - 200 > thisPos ) {
+                  $(this).addClass("fadeIn");
+              }
+          });
+      }
+
+      // if the image in the window of browser when the page is loaded, show that image
+      $(document).ready(function(){
+          showImages('.star');
+      });
+
+      // if the image in the window of browser when scrolling the page, show that image
+      $(window).scroll(function() {
+          showImages('.star');
+      });
+      </script>
+    </html>
